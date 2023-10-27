@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mi Blog Digital</h1>
+        
+    </header>
+    <main>
+     
+      <article-form id="article-form"></article-form>
+      
+     
+  </main>
+
+</body>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+  
+  <div style="text-align: center;" class="container">
+<h2> INICIAR SESION</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+</div>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="./src/article-editor.js" >
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="login.jpeg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+   
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+    
+      <b><a
+      href="formulario.html">Ingresar al Blog Digital
+  </a></b>
+     
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Obtener el modal
+var modal = document.getElementById('id01');
+
+// Cuando el usuario haga clic en cualquier lugar fuera del modal, ciérrelo
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        
+    }
+}
+
+</script>
+<script src="index.js" type="module"></script>
+</body>
+</html>

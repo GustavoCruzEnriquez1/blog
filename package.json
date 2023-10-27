@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "description": "blog",
+  "main": "post-item.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "wds --node-resolve --watch --open"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "gustavo",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@vaadin/router": "^1.7.5",
+    "lit": "^3.0.0",
+    "todo-list": "^0.0.3"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.3.6"
+  }
+}
